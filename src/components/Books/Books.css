@@ -1,0 +1,53 @@
+/* book information */
+.books {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18.66rem;
+  margin: 0 .5rem 2.3rem .5rem;
+  /*background: rgb(250, 250, 250)*/;
+  padding: 1rem;
+  font-family: 'Alice', serif;
+
+}
+
+.image-links {
+  height: 14rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*.image-links img {
+  height: 200px;
+  width: 180px;
+}*/
+
+.book-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-deatils {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: right;
+}
+
+
+
+.description {
+  font-size: .75rem;
+  margin-top: 2rem;
+  /*background: rgb(250, 250, 250);*/
+}

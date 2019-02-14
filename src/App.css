@@ -1,4 +1,42 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1140px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+
+/* navbar */
+.navbar {
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  background-color: #FC814A;
+  color: #FFFFFF;
+  padding: 1.25rem 0rem;
+  width: 100%;
+}
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -30,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

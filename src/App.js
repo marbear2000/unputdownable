@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BooksList from './components/BooksList/BooksList';
+import Searchbar from './components/Searchbar/Searchbar';
+import Google from './util/Google';
+
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      items: []
+    }
+    this.searchGoogle = this.searchGoogle.bind(this);
+  }
+
+   searchGoogle(q, orderBy){
+     Google.search(q, orderBy).then(items => {
+      this.setState ({
+      items: items
+      });
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h2 className="navbar">UnPutDownAble</h2>
+
+        <Searchbar searchGoogle={this.searchGoogle}/>
+        <BooksList books={this.state.items}/>
       </div>
     );
   }
