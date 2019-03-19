@@ -8,7 +8,7 @@ class Books extends React.Component{
       <div className="container books-list">
         <div className="books">
           <div className="image-links">
-            <img src={book.imageLinks} alt="book cover"/>
+            <img src={book.imageLinks} alt="Book cover should be here" />
           </div>
           <div className="book-list">
             <div className="book-info">

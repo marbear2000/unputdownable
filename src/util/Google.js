@@ -11,9 +11,10 @@ const Google = {
         return jsonResponse.items.map(item => {
           return {
           id: item.id,
-          imageLinks: item.volumeInfo.imageLinks.thumbnail,
+          // imageLinks: item.volumeInfo.imageLinks.thumbnail,
+          imageLinks: ((item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : undefined),
           title: item.volumeInfo.title,
-          authors: item.volumeInfo.authors[0],
+          authors: item.volumeInfo.authors,
           publisher: item.volumeInfo.publisher,
           publishedDate: item.volumeInfo.publishedDate,
           categories: item.volumeInfo.categories,
@@ -29,4 +30,4 @@ const Google = {
 
 
 
-export default Google
+export default Google;
