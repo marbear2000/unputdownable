@@ -15,10 +15,10 @@ const Google = {
           imageLinks: ((item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : undefined),
           title: item.volumeInfo.title,
           authors: item.volumeInfo.authors,
-          publisher: item.volumeInfo.publisher,
+          // publisher: item.volumeInfo.publisher,
           publishedDate: item.volumeInfo.publishedDate,
           categories: item.volumeInfo.categories,
-          pageCount: item.volumeInfo.pageCount,
+          // pageCount: item.volumeInfo.pageCount,
           averageRating: item.volumeInfo.averageRating,
           description: item.volumeInfo.description
           }
